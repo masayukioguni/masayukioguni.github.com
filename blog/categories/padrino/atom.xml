@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Blog]]></title>
-  <link href="http://masayukioguni.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: padrino | My Blog]]></title>
+  <link href="http://masayukioguni.github.com/blog/categories/padrino/atom.xml" rel="self"/>
   <link href="http://masayukioguni.github.com/"/>
   <updated>2012-07-29T00:02:57+09:00</updated>
   <id>http://masayukioguni.github.com/</id>
@@ -42,7 +42,7 @@ padrino version   # Show current Padrino Version
                                # Default: development
     [--help]                   # Show help usage
 </code></pre></li>
-<li><p>padrino s &#8211;help
+<li><p>padrino s --help
 Usage:
 padrino start</p>
 
@@ -65,7 +65,7 @@ padrino start</p>
 <h3>daemon起動する場合は以下のようにする</h3>
 
 <p>padrino s -d -i</p></li>
-<li><p>padrino stop &#8211;help
+<li><p>padrino stop --help
   Usage:</p>
 
 <pre><code>padrino stop
@@ -82,15 +82,6 @@ padrino start</p>
 </code></pre></li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Test]]></title>
-    <link href="http://masayukioguni.github.com/blog/2012/07/27/new-post/"/>
-    <updated>2012-07-27T11:57:00+09:00</updated>
-    <id>http://masayukioguni.github.com/blog/2012/07/27/new-post</id>
-    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   

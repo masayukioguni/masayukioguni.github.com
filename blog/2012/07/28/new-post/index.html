@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Test - My Blog</title>
+  <title>padorino 起動時引数まとめ - My Blog</title>
   <meta name="author" content="Masayuki oguni">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="padrino task一覧 Padrino Tasks: padrino console # Boots up the Padrino application irb console
+padrino g # Executes the Padrino generator with given &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://masayukioguni.github.com/blog/2012/07/27/new-post/">
+  <link rel="canonical" href="http://masayukioguni.github.com/blog/2012/07/28/new-post/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -68,7 +68,7 @@
   
   <header>
     
-      <h1 class="entry-title">Test</h1>
+      <h1 class="entry-title">Padorino 起動時引数まとめ</h1>
     
     
       <p class="meta">
@@ -84,14 +84,77 @@
   
 
 
-<time datetime="2012-07-27T11:57:00+09:00" pubdate data-updated="true">Jul 27<span>th</span>, 2012</time>
+<time datetime="2012-07-28T12:45:00+09:00" pubdate data-updated="true">Jul 28<span>th</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content">
+<div class="entry-content"><ul>
+<li><p>padrino task一覧</p>
+
+<p>  Padrino Tasks:</p>
+
+<pre><code>padrino console   # Boots up the Padrino application irb console
+padrino g         # Executes the Padrino generator with given options.
+padrino gen       # Executes the Padrino generator with given options.
+padrino generate  # Executes the Padrino generator with given options.
+padrino help      # Describe available tasks or one specific task
+padrino rake      # Execute rake tasks
+padrino s         # Starts the Padrino application
+padrino start     # Starts the Padrino application
+padrino stop      # Stops the Padrino application
+padrino version   # Show current Padrino Version
+</code></pre>
+
+  Options:
+
+<pre><code>-c, [--chdir=CHDIR]            # Change to dir before starting
+-e, --environment=ENVIRONMENT  # Padrino Environment
+                               # Default: development
+    [--help]                   # Show help usage
+</code></pre></li>
+<li><p>padrino s &#8211;help
+Usage:
+padrino start</p>
+
+<p>  Options:</p>
+
+<pre><code>-a, [--server=SERVER]          # Rack Handler (default: autodetect)
+-h, --host=HOST                # Bind to HOST address
+                               # Default: 0.0.0.0
+-p, --port=N                   # Use PORT
+                               # Default: 3000
+-d, [--daemonize]              # Run daemonized in the background
+-i, [--pid=PID]                # File to store pid
+    [--debug]                  # Set debugging flags
+-c, [--chdir=CHDIR]            # Change to dir before starting
+-e, --environment=ENVIRONMENT  # Padrino Environment
+                               # Default: development
+    [--help]                   # Show help usage
+</code></pre>
+
+<h3>daemon起動する場合は以下のようにする</h3>
+
+<p>padrino s -d -i</p></li>
+<li><p>padrino stop &#8211;help
+  Usage:</p>
+
+<pre><code>padrino stop
+</code></pre>
+
+  Options:
+
+<pre><code>-p, [--pid=PID]                # File to store pid
+                               # Default: tmp/pids/server.pid
+-c, [--chdir=CHDIR]            # Change to dir before starting
+-e, --environment=ENVIRONMENT  # Padrino Environment
+                               # Default: development
+    [--help]                   # Show help usage
+</code></pre></li>
+</ul>
+
 </div>
 
 
@@ -114,15 +177,21 @@
   
 
 
-<time datetime="2012-07-27T11:57:00+09:00" pubdate data-updated="true">Jul 27<span>th</span>, 2012</time>
+<time datetime="2012-07-28T12:45:00+09:00" pubdate data-updated="true">Jul 28<span>th</span>, 2012</time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/padrino/'>padrino</a>
+  
+</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://masayukioguni.github.com/blog/2012/07/27/new-post/" data-via="" data-counturl="http://masayukioguni.github.com/blog/2012/07/27/new-post/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://masayukioguni.github.com/blog/2012/07/28/new-post/" data-via="" data-counturl="http://masayukioguni.github.com/blog/2012/07/28/new-post/" >Tweet</a>
   
   
   
@@ -131,8 +200,8 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2012/07/27/new-post/" title="Previous Post: Test">&laquo; Test</a>
       
-        <a class="basic-alignment right" href="/blog/2012/07/28/new-post/" title="Next Post: padorino 起動時引数まとめ">padorino 起動時引数まとめ &raquo;</a>
       
     </p>
   </footer>

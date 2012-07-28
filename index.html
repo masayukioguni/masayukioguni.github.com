@@ -9,8 +9,8 @@
   <meta name="author" content="Masayuki oguni">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="padrino task一覧 Padrino Tasks: padrino console # Boots up the Padrino application irb console
+padrino g # Executes the Padrino generator with given &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,6 +71,105 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2012/07/28/new-post/">Padorino 起動時引数まとめ</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-28T12:45:00+09:00" pubdate data-updated="true">Jul 28<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><ul>
+<li><p>padrino task一覧</p>
+
+<p>  Padrino Tasks:</p>
+
+<pre><code>padrino console   # Boots up the Padrino application irb console
+padrino g         # Executes the Padrino generator with given options.
+padrino gen       # Executes the Padrino generator with given options.
+padrino generate  # Executes the Padrino generator with given options.
+padrino help      # Describe available tasks or one specific task
+padrino rake      # Execute rake tasks
+padrino s         # Starts the Padrino application
+padrino start     # Starts the Padrino application
+padrino stop      # Stops the Padrino application
+padrino version   # Show current Padrino Version
+</code></pre>
+
+  Options:
+
+<pre><code>-c, [--chdir=CHDIR]            # Change to dir before starting
+-e, --environment=ENVIRONMENT  # Padrino Environment
+                               # Default: development
+    [--help]                   # Show help usage
+</code></pre></li>
+<li><p>padrino s &#8211;help
+Usage:
+padrino start</p>
+
+<p>  Options:</p>
+
+<pre><code>-a, [--server=SERVER]          # Rack Handler (default: autodetect)
+-h, --host=HOST                # Bind to HOST address
+                               # Default: 0.0.0.0
+-p, --port=N                   # Use PORT
+                               # Default: 3000
+-d, [--daemonize]              # Run daemonized in the background
+-i, [--pid=PID]                # File to store pid
+    [--debug]                  # Set debugging flags
+-c, [--chdir=CHDIR]            # Change to dir before starting
+-e, --environment=ENVIRONMENT  # Padrino Environment
+                               # Default: development
+    [--help]                   # Show help usage
+</code></pre>
+
+<h3>daemon起動する場合は以下のようにする</h3>
+
+<p>padrino s -d -i</p></li>
+<li><p>padrino stop &#8211;help
+  Usage:</p>
+
+<pre><code>padrino stop
+</code></pre>
+
+  Options:
+
+<pre><code>-p, [--pid=PID]                # File to store pid
+                               # Default: tmp/pids/server.pid
+-c, [--chdir=CHDIR]            # Change to dir before starting
+-e, --environment=ENVIRONMENT  # Padrino Environment
+                               # Default: development
+    [--help]                   # Show help usage
+</code></pre></li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2012/07/27/new-post/">Test</a></h1>
     
     
@@ -113,6 +212,10 @@
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/07/28/new-post/">padorino 起動時引数まとめ</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/07/27/new-post/">Test</a>

@@ -1,0 +1,63 @@
+---
+layout: post
+title: "padorino 起動時引数まとめ"
+date: 2012-07-28 12:45
+comments: true
+categories: padrino
+---
+
+* padrino task一覧
+
+	Padrino Tasks:
+	  padrino console   # Boots up the Padrino application irb console
+	  padrino g         # Executes the Padrino generator with given options.
+	  padrino gen       # Executes the Padrino generator with given options.
+	  padrino generate  # Executes the Padrino generator with given options.
+	  padrino help      # Describe available tasks or one specific task
+	  padrino rake      # Execute rake tasks
+	  padrino s         # Starts the Padrino application
+	  padrino start     # Starts the Padrino application
+	  padrino stop      # Stops the Padrino application
+	  padrino version   # Show current Padrino Version
+
+	Options:
+	  -c, [--chdir=CHDIR]            # Change to dir before starting
+	  -e, --environment=ENVIRONMENT  # Padrino Environment
+	                                 # Default: development
+	      [--help]                   # Show help usage
+* padrino s --help
+  Usage:
+  padrino start
+
+	Options:
+	  -a, [--server=SERVER]          # Rack Handler (default: autodetect)
+	  -h, --host=HOST                # Bind to HOST address
+	                                 # Default: 0.0.0.0
+	  -p, --port=N                   # Use PORT
+	                                 # Default: 3000
+	  -d, [--daemonize]              # Run daemonized in the background
+	  -i, [--pid=PID]                # File to store pid
+	      [--debug]                  # Set debugging flags
+	  -c, [--chdir=CHDIR]            # Change to dir before starting
+	  -e, --environment=ENVIRONMENT  # Padrino Environment
+	                                 # Default: development
+	      [--help]                   # Show help usage
+### daemon起動する場合は以下のようにする
+padrino s -d -i
+
+* padrino stop --help
+	Usage:
+	  padrino stop
+
+	Options:
+	  -p, [--pid=PID]                # File to store pid
+	                                 # Default: tmp/pids/server.pid
+	  -c, [--chdir=CHDIR]            # Change to dir before starting
+	  -e, --environment=ENVIRONMENT  # Padrino Environment
+	                                 # Default: development
+	      [--help]                   # Show help usage
+
+
+
+
+

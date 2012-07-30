@@ -4,7 +4,7 @@
   <title><![CDATA[Category: padrino | My Blog]]></title>
   <link href="http://masayukioguni.github.com/blog/categories/padrino/atom.xml" rel="self"/>
   <link href="http://masayukioguni.github.com/"/>
-  <updated>2012-07-29T00:02:57+09:00</updated>
+  <updated>2012-07-31T00:22:59+09:00</updated>
   <id>http://masayukioguni.github.com/</id>
   <author>
     <name><![CDATA[Masayuki oguni]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Padrino 設定用の変数の定義と呼び出し]]></title>
+    <link href="http://masayukioguni.github.com/blog/2012/07/31/new-post/"/>
+    <updated>2012-07-31T00:16:00+09:00</updated>
+    <id>http://masayukioguni.github.com/blog/2012/07/31/new-post</id>
+    <content type="html"><![CDATA[<ul>
+<li><p>config/apps.rb
+  Padrino.configure_apps do</p>
+
+<pre><code>set :foo, 'bar'
+</code></pre>
+
+<p>  end</p></li>
+<li><p>以下のように呼び出す
+  Admin.foo => #bar</p></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[padorino 起動時引数まとめ]]></title>

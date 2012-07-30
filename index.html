@@ -9,8 +9,9 @@
   <meta name="author" content="Masayuki oguni">
 
   
-  <meta name="description" content="padrino task一覧 Padrino Tasks: padrino console # Boots up the Padrino application irb console
-padrino g # Executes the Padrino generator with given &hellip;">
+  <meta name="description" content="
+config/apps.rb Padrino.configure_apps do set :foo, 'bar' end
+以下のように呼び出す Admin.foo => #bar ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +66,53 @@ padrino g # Executes the Padrino generator with given &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/31/new-post/">Padrino 設定用の変数の定義と呼び出し</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-31T00:16:00+09:00" pubdate data-updated="true">Jul 31<span>st</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><ul>
+<li><p>config/apps.rb
+  Padrino.configure_apps do</p>
+
+<pre><code>set :foo, 'bar'
+</code></pre>
+
+<p>  end</p></li>
+<li><p>以下のように呼び出す
+  Admin.foo => #bar</p></li>
+</ul>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -212,6 +260,10 @@ padrino start</p>
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/07/31/new-post/">Padrino 設定用の変数の定義と呼び出し</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2012/07/28/new-post/">padorino 起動時引数まとめ</a>

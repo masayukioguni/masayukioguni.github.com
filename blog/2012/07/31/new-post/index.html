@@ -5,12 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Test - My Blog</title>
+  <title>Padrino 設定用の変数の定義と呼び出し - My Blog</title>
   <meta name="author" content="Masayuki oguni">
 
   
   <meta name="description" content="
-">
+config/apps.rb Padrino.configure_apps do set :foo, 'bar' end
+以下のように呼び出す Admin.foo => #bar ">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://masayukioguni.github.com/blog/2012/07/27/new-post/">
+  <link rel="canonical" href="http://masayukioguni.github.com/blog/2012/07/31/new-post/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -68,7 +69,7 @@
   
   <header>
     
-      <h1 class="entry-title">Test</h1>
+      <h1 class="entry-title">Padrino 設定用の変数の定義と呼び出し</h1>
     
     
       <p class="meta">
@@ -84,14 +85,25 @@
   
 
 
-<time datetime="2012-07-27T11:57:00+09:00" pubdate data-updated="true">Jul 27<span>th</span>, 2012</time>
+<time datetime="2012-07-31T00:16:00+09:00" pubdate data-updated="true">Jul 31<span>st</span>, 2012</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content">
+<div class="entry-content"><ul>
+<li><p>config/apps.rb
+  Padrino.configure_apps do</p>
+
+<pre><code>set :foo, 'bar'
+</code></pre>
+
+<p>  end</p></li>
+<li><p>以下のように呼び出す
+  Admin.foo => #bar</p></li>
+</ul>
+
 </div>
 
 
@@ -114,15 +126,21 @@
   
 
 
-<time datetime="2012-07-27T11:57:00+09:00" pubdate data-updated="true">Jul 27<span>th</span>, 2012</time>
+<time datetime="2012-07-31T00:16:00+09:00" pubdate data-updated="true">Jul 31<span>st</span>, 2012</time>
       
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/padrino/'>padrino</a>
+  
+</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://masayukioguni.github.com/blog/2012/07/27/new-post/" data-via="" data-counturl="http://masayukioguni.github.com/blog/2012/07/27/new-post/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://masayukioguni.github.com/blog/2012/07/31/new-post/" data-via="" data-counturl="http://masayukioguni.github.com/blog/2012/07/31/new-post/" >Tweet</a>
   
   
   
@@ -131,8 +149,8 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2012/07/28/new-post/" title="Previous Post: padorino 起動時引数まとめ">&laquo; padorino 起動時引数まとめ</a>
       
-        <a class="basic-alignment right" href="/blog/2012/07/28/new-post/" title="Next Post: padorino 起動時引数まとめ">padorino 起動時引数まとめ &raquo;</a>
       
     </p>
   </footer>

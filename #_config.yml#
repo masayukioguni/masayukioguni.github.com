@@ -80,7 +80,8 @@ google_plus_one_size: medium
 googleplus_user:
 googleplus_hidden: false
 
-# Pinboard
+:!
+:q# Pinboard
 pinboard_user:
 pinboard_count: 3
 

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[My Blog]]></title>
+  <link href="http://masayukioguni.github.com/atom.xml" rel="self"/>
+  <link href="http://masayukioguni.github.com/"/>
+  <updated>2012-07-31T00:22:59+09:00</updated>
+  <id>http://masayukioguni.github.com/</id>
+  <author>
+    <name><![CDATA[Masayuki oguni]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Padrino 設定用の変数の定義と呼び出し]]></title>
+    <link href="http://masayukioguni.github.com/blog/2012/07/31/new-post/"/>
+    <updated>2012-07-31T00:16:00+09:00</updated>
+    <id>http://masayukioguni.github.com/blog/2012/07/31/new-post</id>
+    <content type="html"><![CDATA[<ul>
+<li><p>config/apps.rb
+  Padrino.configure_apps do</p>
+
+<pre><code>set :foo, 'bar'
+</code></pre>
+
+<p>  end</p></li>
+<li><p>以下のように呼び出す
+  Admin.foo => #bar</p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[padorino 起動時引数まとめ]]></title>
+    <link href="http://masayukioguni.github.com/blog/2012/07/28/new-post/"/>
+    <updated>2012-07-28T12:45:00+09:00</updated>
+    <id>http://masayukioguni.github.com/blog/2012/07/28/new-post</id>
+    <content type="html"><![CDATA[<ul>
+<li><p>padrino task一覧</p>
+
+<p>  Padrino Tasks:</p>
+
+<pre><code>padrino console   # Boots up the Padrino application irb console
+padrino g         # Executes the Padrino generator with given options.
+padrino gen       # Executes the Padrino generator with given options.
+padrino generate  # Executes the Padrino generator with given options.
+padrino help      # Describe available tasks or one specific task
+padrino rake      # Execute rake tasks
+padrino s         # Starts the Padrino application
+padrino start     # Starts the Padrino application
+padrino stop      # Stops the Padrino application
+padrino version   # Show current Padrino Version
+</code></pre>
+
+  Options:
+
+<pre><code>-c, [--chdir=CHDIR]            # Change to dir before starting
+-e, --environment=ENVIRONMENT  # Padrino Environment
+                               # Default: development
+    [--help]                   # Show help usage
+</code></pre></li>
+<li><p>padrino s &#8211;help
+Usage:
+padrino start</p>
+
+<p>  Options:</p>
+
+<pre><code>-a, [--server=SERVER]          # Rack Handler (default: autodetect)
+-h, --host=HOST                # Bind to HOST address
+                               # Default: 0.0.0.0
+-p, --port=N                   # Use PORT
+                               # Default: 3000
+-d, [--daemonize]              # Run daemonized in the background
+-i, [--pid=PID]                # File to store pid
+    [--debug]                  # Set debugging flags
+-c, [--chdir=CHDIR]            # Change to dir before starting
+-e, --environment=ENVIRONMENT  # Padrino Environment
+                               # Default: development
+    [--help]                   # Show help usage
+</code></pre>
+
+<h3>daemon起動する場合は以下のようにする</h3>
+
+<p>padrino s -d -i</p></li>
+<li><p>padrino stop &#8211;help
+  Usage:</p>
+
+<pre><code>padrino stop
+</code></pre>
+
+  Options:
+
+<pre><code>-p, [--pid=PID]                # File to store pid
+                               # Default: tmp/pids/server.pid
+-c, [--chdir=CHDIR]            # Change to dir before starting
+-e, --environment=ENVIRONMENT  # Padrino Environment
+                               # Default: development
+    [--help]                   # Show help usage
+</code></pre></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Test]]></title>
+    <link href="http://masayukioguni.github.com/blog/2012/07/27/new-post/"/>
+    <updated>2012-07-27T11:57:00+09:00</updated>
+    <id>http://masayukioguni.github.com/blog/2012/07/27/new-post</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>

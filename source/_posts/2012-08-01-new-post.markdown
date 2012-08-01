@@ -1,0 +1,18 @@
+---
+layout: post
+title: "gitのコミット履歴をまとめる"
+date: 2012-08-01 10:55
+comments: true
+categories: git
+---
+** 下記のコマンドで行う **
+		git rebase -i HEAD~4
+
+** 各種メッセージの説明 **
+
+- pick そのままコミットを採用
+- reword そのコミットを採用するが、コミットメッセージを編集する
+- edit そのコミットを編集する
+- squash そのコミットをその前のコミットをマージする
+- fixup squashと同じだが、コミットメッセージを破棄する
+- 行の削除 そのコミットを削除する

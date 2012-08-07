@@ -4,7 +4,7 @@
   <title><![CDATA[Category: padrino | My Blog]]></title>
   <link href="http://masayukioguni.github.com/blog/categories/padrino/atom.xml" rel="self"/>
   <link href="http://masayukioguni.github.com/"/>
-  <updated>2012-07-31T00:22:59+09:00</updated>
+  <updated>2012-08-07T23:29:49+09:00</updated>
   <id>http://masayukioguni.github.com/</id>
   <author>
     <name><![CDATA[Masayuki oguni]]></name>
@@ -14,20 +14,21 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Padrino 設定用の変数の定義と呼び出し]]></title>
+    <title type="html"><![CDATA[Padrino 設定用の変数定義と呼び出し]]></title>
     <link href="http://masayukioguni.github.com/blog/2012/07/31/new-post/"/>
     <updated>2012-07-31T00:16:00+09:00</updated>
     <id>http://masayukioguni.github.com/blog/2012/07/31/new-post</id>
     <content type="html"><![CDATA[<ul>
-<li><p>config/apps.rb
-  Padrino.configure_apps do</p>
+<li><p>config/apps.rb</p>
 
-<pre><code>set :foo, 'bar'
-</code></pre>
+<pre><code>  Padrino.configure_apps do
+      set :foo, 'bar'
+  end
+</code></pre></li>
+<li><p>以下のように呼び出す</p>
 
-<p>  end</p></li>
-<li><p>以下のように呼び出す
-  Admin.foo => #bar</p></li>
+<pre><code>  Admin.foo =&gt; #bar
+</code></pre></li>
 </ul>
 
 ]]></content>

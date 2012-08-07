@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>My Blog</title>
+  <title>gitのコミット履歴をまとめる - My Blog</title>
   <meta name="author" content="Masayuki oguni">
 
   
@@ -22,7 +22,7 @@ fixup &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://masayukioguni.github.com/">
+  <link rel="canonical" href="http://masayukioguni.github.com/blog/2012/08/01/new-post/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -66,15 +66,12 @@ fixup &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/08/01/new-post/">Gitのコミット履歴をまとめる</a></h1>
+      <h1 class="entry-title">Gitのコミット履歴をまとめる</h1>
     
     
       <p class="meta">
@@ -97,7 +94,7 @@ fixup &hellip;">
   </header>
 
 
-  <div class="entry-content"><p><strong> 下記のコマンドで行う </strong></p>
+<div class="entry-content"><p><strong> 下記のコマンドで行う </strong></p>
 
 <pre><code>    git rebase -i HEAD~4
 </code></pre>
@@ -114,70 +111,16 @@ fixup &hellip;">
 </ul>
 
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/31/new-post/">Padrino 設定用の変数定義と呼び出し</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">Masayuki oguni</span></span>
 
-<time datetime="2012-07-31T00:16:00+09:00" pubdate data-updated="true">Jul 31<span>st</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ul>
-<li><p>config/apps.rb</p>
-
-<pre><code>  Padrino.configure_apps do
-      set :foo, 'bar'
-  end
-</code></pre></li>
-<li><p>以下のように呼び出す</p>
-
-<pre><code>  Admin.foo =&gt; #bar
-</code></pre></li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/28/new-post/">Padorino 起動時引数まとめ</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -189,126 +132,38 @@ fixup &hellip;">
   
 
 
-<time datetime="2012-07-28T12:45:00+09:00" pubdate data-updated="true">Jul 28<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ul>
-<li><p>padrino task一覧</p>
-
-<p>  Padrino Tasks:</p>
-
-<pre><code>padrino console   # Boots up the Padrino application irb console
-padrino g         # Executes the Padrino generator with given options.
-padrino gen       # Executes the Padrino generator with given options.
-padrino generate  # Executes the Padrino generator with given options.
-padrino help      # Describe available tasks or one specific task
-padrino rake      # Execute rake tasks
-padrino s         # Starts the Padrino application
-padrino start     # Starts the Padrino application
-padrino stop      # Stops the Padrino application
-padrino version   # Show current Padrino Version
-</code></pre>
-
-  Options:
-
-<pre><code>-c, [--chdir=CHDIR]            # Change to dir before starting
--e, --environment=ENVIRONMENT  # Padrino Environment
-                               # Default: development
-    [--help]                   # Show help usage
-</code></pre></li>
-<li><p>padrino s &#8211;help
-Usage:
-padrino start</p>
-
-<p>  Options:</p>
-
-<pre><code>-a, [--server=SERVER]          # Rack Handler (default: autodetect)
--h, --host=HOST                # Bind to HOST address
-                               # Default: 0.0.0.0
--p, --port=N                   # Use PORT
-                               # Default: 3000
--d, [--daemonize]              # Run daemonized in the background
--i, [--pid=PID]                # File to store pid
-    [--debug]                  # Set debugging flags
--c, [--chdir=CHDIR]            # Change to dir before starting
--e, --environment=ENVIRONMENT  # Padrino Environment
-                               # Default: development
-    [--help]                   # Show help usage
-</code></pre>
-
-<h3>daemon起動する場合は以下のようにする</h3>
-
-<p>padrino s -d -i</p></li>
-<li><p>padrino stop &#8211;help
-  Usage:</p>
-
-<pre><code>padrino stop
-</code></pre>
-
-  Options:
-
-<pre><code>-p, [--pid=PID]                # File to store pid
-                               # Default: tmp/pids/server.pid
--c, [--chdir=CHDIR]            # Change to dir before starting
--e, --environment=ENVIRONMENT  # Padrino Environment
-                               # Default: development
-    [--help]                   # Show help usage
-</code></pre></li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
+<time datetime="2012-08-01T10:55:00+09:00" pubdate data-updated="true">Aug 1<span>st</span>, 2012</time>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/27/new-post/">Test</a></h1>
-    
-    
-      <p class="meta">
-        
 
-
-
-
-
-
-
-
+<span class="categories">
   
+    <a class='category' href='/blog/categories/git/'>git</a>
+  
+</span>
 
 
-<time datetime="2012-07-27T11:57:00+09:00" pubdate data-updated="true">Jul 27<span>th</span>, 2012</time>
-        
-      </p>
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p>aaaaaaa</p>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://masayukioguni.github.com/blog/2012/08/01/new-post/" data-via="masayuki_oguni" data-counturl="http://masayukioguni.github.com/blog/2012/08/01/new-post/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/07/31/new-post/" title="Previous Post: Padrino 設定用の変数定義と呼び出し">&laquo; Padrino 設定用の変数定義と呼び出し</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
 </div>
+
 <aside class="sidebar">
   
     <section>
@@ -337,7 +192,7 @@ padrino start</p>
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/masayukioguni">@masayukioguni</a> on GitHub
@@ -367,7 +222,7 @@ padrino start</p>
 <section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
@@ -387,7 +242,7 @@ padrino start</p>
 <section>
   <h1>Coderwall</h1>
   <ul id="cw_badges">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
 
   <script type="text/javascript">
@@ -443,6 +298,7 @@ padrino start</p>
 
   
 </aside>
+
 
     </div>
   </div>

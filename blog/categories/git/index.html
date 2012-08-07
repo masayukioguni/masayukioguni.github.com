@@ -5,15 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>My Blog</title>
+  <title>Category: git - My Blog</title>
   <meta name="author" content="Masayuki oguni">
 
   
-  <meta name="description" content="下記のコマンドで行う git rebase -i HEAD~4 各種メッセージの説明 pick そのままコミットを採用
-reword そのコミットを採用するが、コミットメッセージを編集する
-edit そのコミットを編集する
-squash そのコミットをその前のコミットをマージする
-fixup &hellip;">
+  <meta name="description" content="Category: git">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -22,7 +18,7 @@ fixup &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://masayukioguni.github.com/">
+  <link rel="canonical" href="http://masayukioguni.github.comblog/categories/git/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -66,249 +62,40 @@ fixup &hellip;">
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article role="article">
   
-  
-  
-    <article>
-      
   <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/08/01/new-post/">Gitのコミット履歴をまとめる</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-08-01T10:55:00+09:00" pubdate data-updated="true">Aug 1<span>st</span>, 2012</time>
-        
-      </p>
+    <h1 class="entry-title">Category: Git</h1>
     
   </header>
+  
+  <div id="blog-archives" class="category">
 
 
-  <div class="entry-content"><p><strong> 下記のコマンドで行う </strong></p>
 
-<pre><code>    git rebase -i HEAD~4
-</code></pre>
+  
+  <h2>2012</h2>
 
-<p><strong> 各種メッセージの説明 </strong></p>
+<article>
+  
+<h1><a href="/blog/2012/08/01/new-post/">gitのコミット履歴をまとめる</a></h1>
+<time datetime="2012-08-01T10:55:00+09:00" pubdate><span class='month'>Aug</span> <span class='day'>01</span> <span class='year'>2012</span></time>
 
-<ul>
-<li>pick そのままコミットを採用</li>
-<li>reword そのコミットを採用するが、コミットメッセージを編集する</li>
-<li>edit そのコミットを編集する</li>
-<li>squash そのコミットをその前のコミットをマージする</li>
-<li>fixup squashと同じだが、コミットメッセージを破棄する</li>
-<li>行の削除 そのコミットを削除する</li>
-</ul>
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/git/'>git</a></span>
+</footer>
+
+
+</article>
 
 </div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/31/new-post/">Padrino 設定用の変数定義と呼び出し</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
 
   
-
-
-<time datetime="2012-07-31T00:16:00+09:00" pubdate data-updated="true">Jul 31<span>st</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ul>
-<li><p>config/apps.rb</p>
-
-<pre><code>  Padrino.configure_apps do
-      set :foo, 'bar'
-  end
-</code></pre></li>
-<li><p>以下のように呼び出す</p>
-
-<pre><code>  Admin.foo =&gt; #bar
-</code></pre></li>
-</ul>
+</article>
 
 </div>
-  
-  
 
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/28/new-post/">Padorino 起動時引数まとめ</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-28T12:45:00+09:00" pubdate data-updated="true">Jul 28<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><ul>
-<li><p>padrino task一覧</p>
-
-<p>  Padrino Tasks:</p>
-
-<pre><code>padrino console   # Boots up the Padrino application irb console
-padrino g         # Executes the Padrino generator with given options.
-padrino gen       # Executes the Padrino generator with given options.
-padrino generate  # Executes the Padrino generator with given options.
-padrino help      # Describe available tasks or one specific task
-padrino rake      # Execute rake tasks
-padrino s         # Starts the Padrino application
-padrino start     # Starts the Padrino application
-padrino stop      # Stops the Padrino application
-padrino version   # Show current Padrino Version
-</code></pre>
-
-  Options:
-
-<pre><code>-c, [--chdir=CHDIR]            # Change to dir before starting
--e, --environment=ENVIRONMENT  # Padrino Environment
-                               # Default: development
-    [--help]                   # Show help usage
-</code></pre></li>
-<li><p>padrino s &#8211;help
-Usage:
-padrino start</p>
-
-<p>  Options:</p>
-
-<pre><code>-a, [--server=SERVER]          # Rack Handler (default: autodetect)
--h, --host=HOST                # Bind to HOST address
-                               # Default: 0.0.0.0
--p, --port=N                   # Use PORT
-                               # Default: 3000
--d, [--daemonize]              # Run daemonized in the background
--i, [--pid=PID]                # File to store pid
-    [--debug]                  # Set debugging flags
--c, [--chdir=CHDIR]            # Change to dir before starting
--e, --environment=ENVIRONMENT  # Padrino Environment
-                               # Default: development
-    [--help]                   # Show help usage
-</code></pre>
-
-<h3>daemon起動する場合は以下のようにする</h3>
-
-<p>padrino s -d -i</p></li>
-<li><p>padrino stop &#8211;help
-  Usage:</p>
-
-<pre><code>padrino stop
-</code></pre>
-
-  Options:
-
-<pre><code>-p, [--pid=PID]                # File to store pid
-                               # Default: tmp/pids/server.pid
--c, [--chdir=CHDIR]            # Change to dir before starting
--e, --environment=ENVIRONMENT  # Padrino Environment
-                               # Default: development
-    [--help]                   # Show help usage
-</code></pre></li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/27/new-post/">Test</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-27T11:57:00+09:00" pubdate data-updated="true">Jul 27<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>aaaaaaa</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
 <aside class="sidebar">
   
     <section>
@@ -337,7 +124,7 @@ padrino start</p>
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/masayukioguni">@masayukioguni</a> on GitHub
@@ -367,7 +154,7 @@ padrino start</p>
 <section>
   <h1>Latest Tweets</h1>
   <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   <script type="text/javascript">
     $.domReady(function(){
@@ -387,7 +174,7 @@ padrino start</p>
 <section>
   <h1>Coderwall</h1>
   <ul id="cw_badges">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
 
   <script type="text/javascript">
@@ -443,6 +230,7 @@ padrino start</p>
 
   
 </aside>
+
 
     </div>
   </div>

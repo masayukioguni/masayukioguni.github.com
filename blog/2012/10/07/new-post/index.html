@@ -5,11 +5,13 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>new-page - My Blog</title>
+  <title>fluentdメモ - My Blog</title>
   <meta name="author" content="Masayuki oguni">
 
   
-  <meta name="description" content="New-page Jul 27th, 2012 Jul 27th, 2012 Tweet Recent Posts fluentdメモ gitのコミット履歴をまとめる Padrino 設定用の変数定義と呼び出し padorino 起動時引数まとめ Test GitHub Repos Status &hellip;">
+  <meta name="description" content="fluentdとは イベントログの転送や集約をするためのコンパクトなツール
+json オブジェクトを使用
+プラグインアーキテクチャでログの入出力先を定義できる インストール gem install fluentd ** 設定ファイル作成 fluentd --setup ./fluent ** &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +20,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://masayukioguni.github.com/new-page/">
+  <link rel="canonical" href="http://masayukioguni.github.com/blog/2012/10/07/new-post/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -63,32 +65,15 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">New-page</h1>
-    <p class="meta">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-27T12:00:00+09:00" pubdate data-updated="true">Jul 27<span>th</span>, 2012</time></p>
-  </header>
-  
-  
-
-  
-    <footer>
+    
+      <h1 class="entry-title">Fluentdメモ</h1>
+    
+    
       <p class="meta">
         
-        
 
 
 
@@ -100,21 +85,94 @@
   
 
 
-<time datetime="2012-07-27T12:00:00+09:00" pubdate data-updated="true">Jul 27<span>th</span>, 2012</time>
+<time datetime="2012-10-07T15:24:00+09:00" pubdate data-updated="true">Oct 7<span>th</span>, 2012</time>
         
       </p>
+    
+  </header>
+
+
+<div class="entry-content"><p><strong> fluentdとは </strong></p>
+
+<ul>
+<li>イベントログの転送や集約をするためのコンパクトなツール</li>
+<li>json オブジェクトを使用</li>
+<li>プラグインアーキテクチャでログの入出力先を定義できる</li>
+</ul>
+
+
+<p><strong> インストール </strong></p>
+
+<pre><code>gem install fluentd
+</code></pre>
+
+<p>** 設定ファイル作成</p>
+
+<pre><code>fluentd --setup ./fluent
+</code></pre>
+
+<p>** 実行</p>
+
+<pre><code>fluentd -c ./fluent/fluent.conf -vv -p ./fluent/plugin
+
+-c 設定ファイル
+-vv 詳細表示
+-p プラグインディレクトリ
+</code></pre>
+
+<p>テストに使用したもの</p>
+
+<p><a href="https://github.com/masayukioguni/fluent_memo">https://github.com/masayukioguni/fluent_memo</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
       
-        <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://masayukioguni.github.com/new-page/index.html" data-via="masayuki_oguni" data-counturl="http://masayukioguni.github.com/new-page/index.html" >Tweet</a>
+
+<span class="byline author vcard">Posted by <span class="fn">Masayuki oguni</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-07T15:24:00+09:00" pubdate data-updated="true">Oct 7<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/fluentd/'>fluentd</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://masayukioguni.github.com/blog/2012/10/07/new-post/" data-via="masayuki_oguni" data-counturl="http://masayukioguni.github.com/blog/2012/10/07/new-post/" >Tweet</a>
   
   
   
 </div>
 
+    
+    <p class="meta">
       
-    </footer>
-  
+        <a class="basic-alignment left" href="/blog/2012/08/01/new-post/" title="Previous Post: gitのコミット履歴をまとめる">&laquo; gitのコミット履歴をまとめる</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>
